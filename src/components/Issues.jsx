@@ -96,22 +96,14 @@ export default function IssuesSection() {
     const initialVisibleCount = 4;
 
     const displayedIssues =
-      issues.length < initialVisibleCount
-        ? issues
-        : issues.slice(0, initialVisibleCount);
+      issues.length < initialVisibleCount ? issues : issues.slice(0, initialVisibleCount);
 
     return (
       <ul className="flex flex-col gap-4 py-4 min-h-32 pl-[5%]">
         {displayedIssues.map(({ id, issue }) => (
           <li key={id} className="flex  items-center">
-            <img
-              src={DOC_GIF}
-              alt="document gif"
-              className="w-[100px] h-[30px] object-cover"
-            />
-            <p className="pt-2 -translate-x-6 text-black font-Libre_Baskerville ">
-              {issue}
-            </p>
+            <img src={DOC_GIF} alt="document gif" className="w-[100px] h-[30px] object-cover" />
+            <p className="pt-2 -translate-x-6 text-black font-Libre_Baskerville ">{issue}</p>
           </li>
         ))}
         <li className="pt-2 pl-[50px] font-medium text-black font-Libre_Baskerville">
@@ -146,13 +138,8 @@ export default function IssuesSection() {
         {/* Main Issues Section */}
 
         <div className="w-[50%] bg-white/25  rounded-xl shadow-xl min-h-[370px]  border-black my-5 px-5">
-          <h1 className="text-black font-lora text-xl font-semibold text-center">
-            CURRENT ISSUES
-          </h1>
-          <YearButtons
-            years={Object.keys(issues)}
-            onClick={(year) => setCurrentIssue(year)}
-          />
+          <h1 className="text-black font-lora text-xl font-semibold text-center">CURRENT ISSUES</h1>
+          <YearButtons years={Object.keys(issues)} onClick={(year) => setCurrentIssue(year)} />
           <IssueList issues={issues[currentIssue] || []} />
         </div>
 

@@ -8,7 +8,7 @@ import line from '../assets/line.png';
 import FAQs from '../components/faq.jsx';
 import Footer from '../components/Footer.jsx';
 
-import NavBar_1 from '../components/NavBar_1.jsx';
+import NavBar from '../components/NavBar_1.jsx';
 import CircularItems from '../utils/CircularItems.jsx';
 import Impactfactor from '../assets/Impactfactor.gif';
 import Check from '../assets/Check.gif';
@@ -41,8 +41,6 @@ import ContentChanger from '../utils/useRotatingContent.jsx';
 import AnimatedText from '../utils/Animationtext.jsx';
 
 export default function Home() {
-  const text = 'Science, Engineering, and Technology';
-
   const fields = [
     'Arts',
     'Humanities',
@@ -58,24 +56,20 @@ export default function Home() {
 
   return (
     <div className="bg-color ">
-      <NavBar_1 />
+      <NavBar SubNavColor={'bg-white'} NavColor={'bg-white'} />
 
       <section id="section1" className="">
         <p className="text-white text-4xl text-center font-Libre_Baskerville leading-relaxed font-medium ">
           International Journal of Multidisciplinary Research in <br />
           <span className=" font-Libre_Baskerville italic ">
-            <AnimatedText text={text} />
+            <AnimatedText text={'Science, Engineering, and Technology'} />
           </span>
         </p>
         <div className="text-white flex items-center justify-center text-center font-lora">
           <img src={Email} className="w-7 h-7 mr-2" alt="Email" />
           <p className="mr-4">ijmrset@gmail.com</p>
 
-          <img
-            src={Impactfactor}
-            className="w-7 h-7 mr-2"
-            alt="Impact Factor"
-          />
+          <img src={Impactfactor} className="w-7 h-7 mr-2" alt="Impact Factor" />
           <p className="mr-4">Impact Factor: 7.521</p>
 
           <img src={Check} className="w-7 h-7 mr-2" alt="Check" />
@@ -88,37 +82,31 @@ export default function Home() {
         <h1 className="text-center text-7xl pb-10 leading-8 font-Inter font-bold">
           IJMRSET <br />{' '}
           <span className="text-3xl">
-            (Open Access, Double Blind Peer-Reviewed, Refereed, & Scholarly
-            Indexed Journal)
+            (Open Access, Double Blind Peer-Reviewed, Refereed, & Scholarly Indexed Journal)
           </span>
         </h1>
         <div className="flex gap-4">
           <div className="w-[70%]">
             <p className="pb-10 font-Inter font-semibold text-xl italic">
-              IJMRSET is a well-established, multidisciplinary, open-access,
-              peer-reviewed journal with an Impact Factor of 7.521 (calculated
-              by Google Scholar and Semantic Scholar | AI-Powered Research
-              Tool). Published monthly in multiple languages, it is indexed in
-              all major databases and repositories, ensuring widespread
-              visibility of the research it publishes. The journal assigns a
-              Digital Object Identifier (DOI) to every article and includes a
-              Citation Generator. It follows COPE Guidelines for ethical
-              publishing and is an ISSN Approved Journal. The journal aims to
-              provide an efficient and transparent peer-review process. Authors
-              can expect a swift and reliable experience from submission to
-              publication.
+              IJMRSET is a well-established, multidisciplinary, open-access, peer-reviewed journal
+              with an Impact Factor of 7.521 (calculated by Google Scholar and Semantic Scholar |
+              AI-Powered Research Tool). Published monthly in multiple languages, it is indexed in
+              all major databases and repositories, ensuring widespread visibility of the research
+              it publishes. The journal assigns a Digital Object Identifier (DOI) to every article
+              and includes a Citation Generator. It follows COPE Guidelines for ethical publishing
+              and is an ISSN Approved Journal. The journal aims to provide an efficient and
+              transparent peer-review process. Authors can expect a swift and reliable experience
+              from submission to publication.
               <br />
               <br />
-              IJMRSET offers affordable processing charges, with a fee of ₹1000
-              INR for Indian authors and $30 for international authors. The
-              journal is committed to maintaining low costs while ensuring
-              quality. With its global reach and indexing in major databases,
-              the journal maximizes the impact of the research it publishes.
-              IJMRSET provides scholars a platform to share their work with a
-              wider audience, while ensuring high ethical standards. Authors can
-              trust the journal for a timely and rigorous peer-review process.
-              The journal remains a reliable and valuable resource for scholars
-              in various disciplines.
+              IJMRSET offers affordable processing charges, with a fee of ₹1000 INR for Indian
+              authors and $30 for international authors. The journal is committed to maintaining low
+              costs while ensuring quality. With its global reach and indexing in major databases,
+              the journal maximizes the impact of the research it publishes. IJMRSET provides
+              scholars a platform to share their work with a wider audience, while ensuring high
+              ethical standards. Authors can trust the journal for a timely and rigorous peer-review
+              process. The journal remains a reliable and valuable resource for scholars in various
+              disciplines.
             </p>
           </div>
           <div className="w-[30%] flex justify-center ">
@@ -169,30 +157,30 @@ export default function Home() {
             <div className="font-Inter font-semibold py-3 space-y-3">
               <h1>Submit Paper As Per Single Column Format</h1>
               <ul className="flex gap-3 ">
-                <li className="bg-[#000] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
+                <a
+                  href="mailto:ijmrset@gmail.com"
+                  className="bg-[#000] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora"
+                >
                   <img src={upload} alt="login" className="w-[30px]" />
                   <button type="button">Submit Paper via Email</button>
-                </li>
-                <li className="bg-[#000] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
+                </a>
+                <a
+                  href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fijmrset.com%2FIJMRSET_Paper%2520Template.docx&wdOrigin=BROWSELINK"
+                  className="bg-[#000] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora"
+                >
                   <img src={file} alt="login" className="w-[30px]" />
                   <button type="button">Paper Format</button>
-                </li>
+                </a>
               </ul>
               <p>Email:ijmrset@gmail.com</p>
             </div>
           </div>
           <div className="w-1/2 space-y-3 -mt-10">
-            <h1 className="font-Inter text-3xl font-bold text-right pb-2">
-              Why Choose US ?
-            </h1>
+            <h1 className="font-Inter text-3xl font-bold text-right pb-2">Why Choose US ?</h1>
             <div className="flex gap-2">
               <div className=" bg-purple-900 shadow-xl h-[150px] w-[70%] rounded-xl ">
                 <div className="h-full w-full p-5  flex flex-col justify-center items-center">
-                  <img
-                    src={GoogleAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={GoogleAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-white text-center font-Inter text-xl font-bold">
                     Indexed in Google Scholar and Other Reputed Databases
                   </h1>
@@ -200,11 +188,7 @@ export default function Home() {
               </div>
               <div className="bg-yellow-500 h-[150px] w-[30%] rounded-xl ">
                 <div className="h-full w-full p-5  flex flex-col justify-center items-center">
-                  <img
-                    src={ImpactFactorAnimation}
-                    alt="Google"
-                    className="h-14 "
-                  />
+                  <img src={ImpactFactorAnimation} alt="Google" className="h-14 " />
                   <h1 className="text-black text-center font-Inter text-xl font-bold">
                     High Impact Factor
                   </h1>
@@ -215,11 +199,7 @@ export default function Home() {
               <div className=" h-[400px] w-[35%] flex flex-col gap-2">
                 <div className="bg-teal-500 h-[33.33%] w-full  rounded-xl">
                   <div className="h-full w-full p-5  flex flex-col justify-center items-center">
-                    <img
-                      src={FileAnimation}
-                      alt="Google"
-                      className="h-14 w-14"
-                    />
+                    <img src={FileAnimation} alt="Google" className="h-14 w-14" />
                     <h1 className="text-white text-center font-Inter text-md font-bold">
                       Strict Policy against Plagiarism
                     </h1>
@@ -227,11 +207,7 @@ export default function Home() {
                 </div>
                 <div className="bg-green-500 h-[33.33%] w-full rounded-xl">
                   <div className="h-full w-full p-2 flex flex-col justify-center items-center">
-                    <img
-                      src={MoneyAnimation}
-                      alt="Google"
-                      className="h-16 w-16"
-                    />
+                    <img src={MoneyAnimation} alt="Google" className="h-16 w-16" />
                     <h1 className="text-white text-center font-Inter text-md font-bold">
                       Low Processing Charges
                     </h1>
@@ -239,11 +215,7 @@ export default function Home() {
                 </div>
                 <div className="bg-orange-500 h-[33.33%] w-full rounded-xl">
                   <div className="h-full w-full p-5  flex flex-col justify-center items-center">
-                    <img
-                      src={CertificateAnimation}
-                      alt="Google"
-                      className="h-14 w-14"
-                    />
+                    <img src={CertificateAnimation} alt="Google" className="h-14 w-14" />
                     <h1 className="text-white text-center font-Inter text-md font-bold">
                       Free Digitally Signed E-Certificates
                     </h1>
@@ -252,51 +224,31 @@ export default function Home() {
               </div>
               <div className="bg-blue-500 sapce-y-3 flex flex-col p-2 justify-evenly  h-[410px] w-[65%] rounded-xl">
                 <div className="flex gap-1 items-center ">
-                  <img
-                    src={ArrowAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={ArrowAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-black  font-Inter text-lg font-bold">
                     Best Peer-Reviewed Journal
                   </h1>
                 </div>
                 <div className="flex gap-1 items-center">
-                  <img
-                    src={ArrowAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={ArrowAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-black  font-Inter text-lg font-bold">
                     Easy and Quick Processing and Publication
                   </h1>
                 </div>
                 <div className="flex gap-1  items-center">
-                  <img
-                    src={ArrowAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={ArrowAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-black  font-Inter text-lg font-bold">
                     Authors Queries Resolved Immediately
                   </h1>
                 </div>
                 <div className="flex gap-1  items-center">
-                  <img
-                    src={ArrowAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={ArrowAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-black  font-Inter text-lg font-bold">
                     Best Multidisciplinary Journal
                   </h1>
                 </div>
                 <div className="flex gap-1  items-center">
-                  <img
-                    src={ArrowAnimation}
-                    alt="Google"
-                    className="h-14 w-14"
-                  />
+                  <img src={ArrowAnimation} alt="Google" className="h-14 w-14" />
                   <h1 className="text-black  font-Inter text-lg font-bold">
                     24 X 7 Customer Support
                   </h1>
@@ -330,9 +282,7 @@ export default function Home() {
                     decimals={3}
                     className="text-5xl text-black  font-Inter font-bold"
                   />
-                  <h1 className="text-black font-Inter font-semibold text-2xl">
-                    Impact Factor
-                  </h1>
+                  <h1 className="text-black font-Inter font-semibold text-2xl">Impact Factor</h1>
                 </div>
                 <div className="bg-white flex shadow-xl  flex-col justify-center items-center rounded-xl h-[200px] w-[400px]">
                   <CountUp
@@ -394,9 +344,7 @@ export default function Home() {
           <div className="flex gap-1 justify-center flex-wrap">
             <div className="bg-purple-700 h-[400px] text-white w-[300px] rounded-xl outline-white outline-2 shadow-lg p-4">
               <div className="flex items-center gap-2 ">
-                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">
-                  01
-                </h1>
+                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">01</h1>
                 <img
                   src={ArrowAnimation_2}
                   alt="Arrow"
@@ -410,15 +358,13 @@ export default function Home() {
                 Paper Submission
               </h1>
               <p className="text-md text-center italic drop-shadow">
-                Submit your manuscript via email to [email protected], adhering
-                to the journal’s format
+                Submit your manuscript via email to [email protected], adhering to the journal’s
+                format
               </p>
             </div>
             <div className="bg-purple-700 h-[400px] text-white w-[300px] rounded-xl outline-white outline-2 shadow-lg p-4">
               <div className="flex items-center gap-2 ">
-                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">
-                  02
-                </h1>
+                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">02</h1>
                 <img
                   src={ArrowAnimation_2}
                   alt="Arrow"
@@ -438,9 +384,7 @@ export default function Home() {
             </div>
             <div className="bg-purple-700 h-[400px] text-white w-[300px] rounded-xl outline-white outline-2 shadow-lg p-4">
               <div className="flex items-center gap-2 ">
-                <h1 className="font-Inter text-7xl font-bold drop-shadow-lg ">
-                  03
-                </h1>
+                <h1 className="font-Inter text-7xl font-bold drop-shadow-lg ">03</h1>
                 <img
                   src={ArrowAnimation_2}
                   alt="Arrow"
@@ -455,15 +399,13 @@ export default function Home() {
                 Registration
               </h1>
               <p className="text-md text-center italic drop-shadow">
-                Pay the processing fee (₹1000 for Indian authors or $30 for
-                foreign authors) to confirm publication
+                Pay the processing fee (₹1000 for Indian authors or $30 for foreign authors) to
+                confirm publication
               </p>
             </div>
             <div className="bg-purple-700 h-[400px] text-white  w-[300px] rounded-xl outline-white outline-2 shadow-lg p-4">
               <div className="flex items-center gap-2 py-4">
-                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">
-                  04
-                </h1>
+                <h1 className="font-Inter text-7xl font-bold  drop-shadow-lg ">04</h1>
               </div>
               <div className=" mx-auto h-32 w-32 bg-white rounded-full overflow-hidden">
                 <img src={Animation4} alt="Animation" />
@@ -472,8 +414,7 @@ export default function Home() {
                 E-Certificates & Publication
               </h1>
               <p className="text-md text-center italic drop-shadow">
-                Accepted papers are published online with digital certificates
-                provided for authors
+                Accepted papers are published online with digital certificates provided for authors
               </p>
             </div>
           </div>
@@ -487,9 +428,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[40%] flex flex-col justify-center items-center gap-5 ">
-            <h1 className="font-Inter text-black text-4xl font-bold ">
-              RESEARCH AREAS
-            </h1>
+            <h1 className="font-Inter text-black text-4xl font-bold ">RESEARCH AREAS</h1>
             <div className="h-[250px] w-[200px] bg-black rounded-xl  flex flex-col gap-10 justify-center items-center">
               <img src={NewOne} alt="newOne" className="h-[150px] " />
             </div>
@@ -514,9 +453,7 @@ export default function Home() {
           </div>
         </div>
         <div className="py-5">
-          <h1 className="text-left pl-10 font-Inter text-black text-4xl font-bold ">
-            ISSUES
-          </h1>
+          <h1 className="text-left pl-10 font-Inter text-black text-4xl font-bold ">ISSUES</h1>
           <div>
             <IssuesSection />
           </div>
@@ -531,18 +468,14 @@ export default function Home() {
         </div>
       </section>
       <section id="section5" className="bg-color min-h-[500px] py-10">
-        <h1 className="text-center pr-10 font-Inter text-white text-4xl font-bold ">
-          CHARGES
-        </h1>
+        <h1 className="text-center pr-10 font-Inter text-white text-4xl font-bold ">CHARGES</h1>
 
         <div className="flex gap-10 justify-center items-center py-10 font-Inter">
           <div className=" bg-white min-h-[400px] w-[350px] p-5 rounded-3xl rounded-tl-none space-y-5">
             <div className="bg-slate-400 flex justify-center items-center h-[150px] w-[150px] rounded-full mx-auto">
               <img src={Author} alt="author" className="h-[150px]" />
             </div>
-            <h1 className="font-lora text-2xl text-center font-extrabold">
-              INDIAN AUTHOR
-            </h1>
+            <h1 className="font-lora text-2xl text-center font-extrabold">INDIAN AUTHOR</h1>
             <p className="text-4xl text-center  font-bold">INR 1000/-</p>
             <ul className="space-y-3 py-3 pl-5">
               <li className="flex gap-2">
@@ -562,18 +495,24 @@ export default function Home() {
                 <p className="">DOI Allocation </p>
               </li>
             </ul>
-            <div className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
+            <a href='mailto:ijmrset@gmail.com' className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
               <img src={upload} alt="login" className="w-[30px]" />
               <button type="button">Submit Paper via Email</button>
-            </div>
+            </a>
+            <a
+                  href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fijmrset.com%2FIJMRSET_Paper%2520Template.docx&wdOrigin=BROWSELINK"
+                  className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2 justify-center text-white font-semibold font-lora"                >
+                  <img src={file} alt="login" className="w-[30px]" />
+                  <button type="button">Paper Format</button>
+                </a>
+              
+            
           </div>
           <div className=" bg-white min-h-[400px] w-[350px] p-5 rounded-3xl rounded-br-none space-y-5">
             <div className="bg-slate-400 flex justify-center items-center h-[150px] w-[150px] rounded-full mx-auto">
               <img src={Author} alt="author" className="h-[150px]" />
             </div>
-            <h1 className="font-lora text-2xl text-center font-extrabold">
-              FOREIGN AUTHOR
-            </h1>
+            <h1 className="font-lora text-2xl text-center font-extrabold">FOREIGN AUTHOR</h1>
             <p className="text-4xl text-center  font-bold">USD 30/-</p>
             <ul className="space-y-3 py-3 pl-5">
               <li className="flex gap-2">
@@ -593,10 +532,16 @@ export default function Home() {
                 <p className="">DOI Allocation </p>
               </li>
             </ul>
-            <div className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
+             <a href='mailto:ijmrset@gmail.com' className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2  text-white font-semibold font-lora">
               <img src={upload} alt="login" className="w-[30px]" />
               <button type="button">Submit Paper via Email</button>
-            </div>
+            </a>
+            <a
+                  href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fijmrset.com%2FIJMRSET_Paper%2520Template.docx&wdOrigin=BROWSELINK"
+                  className="bg-[#000] mx-auto w-[250px] p-3 rounded-lg flex gap-2 justify-center text-white font-semibold font-lora"                >
+                  <img src={file} alt="login" className="w-[30px]" />
+                  <button type="button">Paper Format</button>
+                </a>
           </div>
         </div>
         <div className="my-5 overflow-hidden">

@@ -5,25 +5,19 @@ export default function Footer() {
     <div className="footer h-[400px]  w-full">
       <div className="flex h-full w-full px-10">
         <div className="w-[40%] flex flex-col gap-5 justify-center items-center">
-          <img
-            src={Logo}
-            alt="logo"
-            className="h-28 p-4 rounded-full    bg-white "
-          />
+          <img src={Logo} alt="logo" className="h-28 p-4 rounded-full    bg-white " />
           <h1 className="font-lora text-xl text-center font-medium text-white">
             International Journal of Multidisciplinary Research in <br />
             <span className="italic">Science, Engineering and Technology</span>
           </h1>
           <p className="italic font-Inter text-sm text-center text-white">
-            IJMRSET is a peer-reviewed journal with a 7.54 Impact Factor,
-            publishing research in Science, Engineering, Technology, and
-            Management. It ensures fast review and online publication.
+            IJMRSET is a peer-reviewed journal with a 7.54 Impact Factor, publishing research in
+            Science, Engineering, Technology, and Management. It ensures fast review and online
+            publication.
           </p>
         </div>
         <div className="w-[30%] flex flex-col gap-5 justify-center items-center py-24">
-          <h1 className="font-lora text-xl text-center font-bold mb-auto  text-white">
-            OUR LINKS
-          </h1>
+          <h1 className="font-lora text-xl text-center font-bold mb-auto  text-white">OUR LINKS</h1>
           <ul className="flex flex-col justify-center items-center gap-4 text-white  font-Inter text-lg">
             <li>Home</li>
 
@@ -35,9 +29,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="w-[30%] flex flex-col gap-5 justify-center items-center py-24">
-          <h1 className="font-lora text-xl text-center font-bold mb-auto  text-white">
-            Contact
-          </h1>
+          <h1 className="font-lora text-xl text-center font-bold mb-auto  text-white">Contact</h1>
           <p className="flex flex-col justify-center items-center gap-4 text-white  font-Inter text-lg">
             Dr.R.Sugumar <br />
             The Editor in Chief <br />

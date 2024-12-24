@@ -32,8 +32,7 @@ const ijmrsetBenefits = [
   {
     id: 6,
     title: 'Indexed Journal',
-    content:
-      'Indexed in multiple databases, increasing the discoverability of your research.',
+    content: 'Indexed in multiple databases, increasing the discoverability of your research.',
   },
   {
     id: 7,
@@ -65,10 +64,8 @@ export default function Benfits() {
   return (
     <ul className="flex flex-wrap justify-around  gap-5 p-10">
       {ijmrsetBenefits.map((each) => (
-        <li className="w-[40%] bg-color3  shadow-lg space-y-3 p-5 rounded-xl">
-          <h1 className="text-black font-lora text-xl text-center font-bold">
-            {each.title}
-          </h1>
+        <li key={each.id} className="w-[40%] bg-color3  shadow-lg space-y-3 p-5 rounded-xl">
+          <h1 className="text-black font-lora text-xl text-center font-bold">{each.title}</h1>
           <p className="text-center font-Inter font-mdedium">{each.content}</p>
         </li>
       ))}

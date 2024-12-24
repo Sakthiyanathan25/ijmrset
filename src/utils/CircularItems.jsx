@@ -29,7 +29,7 @@ const CircularItems = () => {
         const [first, ...rest] = prev;
         return [...rest, first];
       });
-    }, 6000); // Rotate every 3 seconds
+    }, 6000); // Rotate every 6 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -40,9 +40,7 @@ const CircularItems = () => {
           key={index}
           src={image}
           alt={`C${index + 1}`}
-          className={`circle-item  ${
-            index === 2 || index === 6 ? 'large' : ''
-          }`}
+          className={`circle-item  ${index === 2 || index === 6 ? 'large' : ''}`}
           style={{
             ...positions[index],
             transform: `translate(-50%, -50%)`,

@@ -77,9 +77,7 @@ export default function RecentPapers() {
               <img src={eachList.img} alt="Avatar" className="mx-auto" />
             </div>
 
-            <h1 className="text-md font-lora text-white text-center">
-              {eachList.title}
-            </h1>
+            <h1 className="text-md font-lora text-white text-center">{eachList.title}</h1>
             <div className="flex gap-2 mt-auto mb-0">
               <button className="bg-white shadow-lg text-black p-3 rounded-md space-y-2 font-semibold font-lora">
                 View Paper

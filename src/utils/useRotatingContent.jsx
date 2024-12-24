@@ -56,35 +56,35 @@ const ContentChanger = () => {
   const currentContent = content[currentIndex];
 
   return (
-    <div
-      className="flex min-h-[300px] py-[10px] items-center px-[5%]"
-      key={currentIndex}
-    >
+    <div className="flex min-h-[300px] py-[10px] items-center px-[5%]" key={currentIndex}>
       {/* Content Section */}
       <div className="w-[60%] flex flex-col gap-2 justify-center h-[350px]">
-        <h1 className="text-white font-lora text-3xl animate-fadeIn">
-          {currentContent.heading}
-        </h1>
+        <h1 className="text-white font-lora text-3xl animate-fadeIn">{currentContent.heading}</h1>
         <p className="text-white text-lg font-sans italic animate-fadeIn">
           {currentContent.paragraph}
         </p>
 
         <ul className="flex gap-3 animate-fadeIn">
-          <li className="bg-[#fff] p-3 rounded-lg flex gap-2  text-black font-semibold font-lora">
+          <a
+            href="mailto:ijmrset@gmail.com"
+            className="bg-[#fff] p-3 rounded-lg flex gap-2  text-black font-semibold font-lora"
+          >
             <img src={upload_gif} alt="login" className="w-[30px]" />
+
             <button type="button">Submit Paper via Email</button>
-          </li>
-          <li className="bg-[#fff] p-3 rounded-lg flex gap-2  text-black font-semibold font-lora">
+          </a>
+          <a
+            href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fijmrset.com%2FIJMRSET_Paper%2520Template.docx&wdOrigin=BROWSELINK"
+            className="bg-[#fff] p-3 rounded-lg flex gap-2  text-black font-semibold font-lora"
+          >
             <img src={file_gif} alt="login" className="w-[30px]" />
             <button type="button">Paper Format</button>
-          </li>
+          </a>
         </ul>
       </div>
 
       {/* Image Section */}
-      <div
-        className={`w-[40%] flex justify-center ${currentContent.imgContainerCSS}`}
-      >
+      <div className={`w-[40%] flex justify-center ${currentContent.imgContainerCSS}`}>
         <img
           src={currentContent.image}
           className={`max-h-[400px] animate-fadeIn ${currentContent.imgCSS}`}

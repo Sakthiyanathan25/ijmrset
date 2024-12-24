@@ -39,10 +39,7 @@ const FAQs = () => {
   return (
     <div className="flex flex-col justify-center my-5 items-center gap-5 px-[20%]">
       {faqData.map((faq) => (
-        <div
-          key={faq.id}
-          className="bg-gray-400/15 w-full p-[20px] space-y-6 shadow-xl rounded-md"
-        >
+        <div key={faq.id} className="bg-gray-400/15 w-full p-[20px] space-y-6 shadow-xl rounded-md">
           <div className="flex items-center justify-between">
             <h3
               onClick={() => toggleFaq(faq.id)}
